@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+}
+
+
+body {
+    font-family: "JetBrains Mono", monospace;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    margin: 5px 10px 5px 20px;
+}
+
+.logoName {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav {
+    background-color: #050705;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-btn:hover {
+    color: #505050;
+}
+
+/* .nav-btn.active {
+    background-color: rgb(63, 43, 43);
+    border-radius: 25px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-btn.active:hover {
+    background-color: white;
+} */
+
+.table-container .table-content {
+    border-collapse: collapse;
+    margin: 25px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.table-container .table-content thead tr {
+    background-color: #050705;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table-container .table-content th,
+.table-container .table-content td {
+    padding: 12px 15px;
+}
+
+.table-container .table-content tbody tr {
+    border-bottom: 1px solid #050705;
+}
