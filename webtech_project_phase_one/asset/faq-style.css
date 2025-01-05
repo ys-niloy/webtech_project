@@ -1,0 +1,200 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "JetBrains Mono", monospace;
+    /* color: white; */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    margin: 5px 10px 5px 20px;
+}
+
+.logoName {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav {
+    background-color: #07332F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-btn:hover {
+    color: #505050;
+}
+
+.nav-btn.active {
+    background-color: rgb(63, 43, 43);
+    border-radius: 25px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-btn.active:hover {
+    background-color: white;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+} */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.title{
+    padding: 30px 0px 0px 50px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.header-actions .btn-secondary {
+    margin-right: 10px;
+    color: #0070f3;
+    text-decoration: none;
+}
+
+.header-actions .btn-primary {
+    padding: 10px 15px;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 50px 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.faq-section h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.faq-section p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.faq-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.faq-item p {
+    color: #666;
+}
+
+.faq-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.faq-footer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.faq-footer p {
+    flex: 1;
+    color: #555;
+}
+
+.faq-footer .btn-primary {
+    padding: 10px 15px;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
