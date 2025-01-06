@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../asset/login.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login">Login</div>
+        <form action="../controller/loginCheck.php" method="post">
+            <div class="form">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="form">
+                <label for="userType">User Type:</label>
+                <select name="userType" id="userType" required>
+                    <option value="" disabled selected>Select user type</option>
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+
+            <div class="form">
+                <label for="agreement">
+                    <input type="radio" name="agreement" id="agreement" value="agree" required> <br>
+                    I agree to the <a href="legalAgreement.html" target="_blank">Legal Policies</a>
+                </label>
+            </div>
+
+            <input class="btn" type="submit" name="login" value="Login">
+        </form>
+
+        <div class="signup-link">
+            Don't have an account? <a href="../view/registration.html">Sign Up</a>
+        </div>
+    </div>
+</body>
+
+</html>

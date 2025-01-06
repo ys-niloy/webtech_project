@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #002855;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .nav-buttons {
+    display: flex;
+}
+
+.navbar .nav-buttons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.navbar .nav-buttons a:hover {
+    background-color: white;
+    color: #002855;
+}
